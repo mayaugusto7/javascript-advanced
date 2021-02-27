@@ -2,25 +2,27 @@
 // recebendo um função como parametro ou
 // retornando uma função como parametro são chamadas high-order-functions
 
-var calculate = function(fn, x, y) {
+const calculate = (fn, x, y) => {
     return fn(x, y);
 };
 
-var sum = function(x, y) {
+const sum = (x, y) => {
     return x + y;
 };
 
-var mult = function(x, y) {
+const multiply = (x, y) => {
     return x * y;
 };
 
-console.log(calculate(sum, 2, 5));
-console.log(calculate(mult, 2, 5));
+console.log(calculate(sum, 2, 5)); // 7
+console.log(calculate(multiply, 2 , 5)); // 10
 
-// usando arrow functions
-const sum2 = (x, y) => x + y;
-const mult2 = (x, y) => x * y;
+const fullName = (fn, name, last) => {
+    return fn(name, last);
+}
 
-console.log(calculate(sum2, 2, 5));
-console.log(calculate(mult2, 2, 5));
+const fn = (name, last) => name + ' ' + last;
 
+console.log(fullName(fn, 'Maycon', 'Ribeiro'));
+console.log(fullName(fn, 'Marcos', 'Antônio'));
+console.log(fullName(fn, 'Rosemary', 'Martins'));

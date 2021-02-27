@@ -12,7 +12,10 @@
     "@storybook/addon-links": "^5.3.13",
     "@storybook/addons": "^5.3.13",
     "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.13"
+    "@storybook/react": "^5.3.13",
+    "localforage": "^1.9.0",
+    "lodash": "^4.17.21",
+    "ramda": "^0.21.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 9009",

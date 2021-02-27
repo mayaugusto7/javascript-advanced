@@ -23,13 +23,13 @@ function var_hosting() {
 
 var_hosting();
 
-function let() {
-    let n = 1;
-    if (true) {
-        let n = 2;
-        console.log(n); // 2
-    }
-    console.log(n); // 1
-}
-
-let();
+// function let() {
+//     let n = 1;
+//     if (true) {
+//         let n = 2;
+//         console.log(n); // 2
+//     }
+//     console.log(n); // 1
+// }
+//
+// let();

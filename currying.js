@@ -1,21 +1,23 @@
-//A técnica de transformar uma função com múltiplos parâmetros em uma sequência de funções que aceitam apenas um parâmetro é chamada de Currying.
+//A técnica de transformar uma função com múltiplos parâmetros em uma sequência de funções que aceitam apenas um
+// parâmetro é chamada de Currying.
 console.log("Ecmas 5 currying");
-var add = function(x, y) {
+let add = function(x, y) {
     return x + y;
 };
 console.log(add(5, 2));
 
 // currying
-var add_c = function(x) {
+let add_c = function(x) {
     return function(y) {
         return x + y;
     };
 };
+
 console.log(add_c(5)(2));
 console.log(add_c(5))
 
-var addFive = add_c(5);
-var addTen = add_c(10);
+let addFive = add_c(5);
+let addTen = add_c(10);
 
 console.log(addFive(3));
 console.log(addFive(1));

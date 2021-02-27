@@ -1,6 +1,6 @@
 // As funções call e apply nos deixam invocar métodos como se estivéssemos no contexto de um outro objeto:
 
-var myself = { firstName: 'Matheus', lastName: 'Lima' };
+let myself = { firstName: 'Matheus', lastName: 'Lima' };
 
 function showFullName() {
     console.log(this.firstName + " " + this.lastName);

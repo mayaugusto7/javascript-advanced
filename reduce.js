@@ -1,4 +1,4 @@
-var months = [
+let months = [
     { shortName: 'JAN', fullName: 'January', number: 1 },
     { shortName: 'FEV', fullName: 'February', number: 2 },
     { shortName: 'MAR', fullName: 'March', number: 3 },
@@ -13,7 +13,7 @@ var months = [
     { shortName: 'DEC', fullName: 'December', number: 12 }
 ];
 
-var monthsAcc = months.reduce(function(acc, month) {
+let monthsAcc = months.reduce(function(acc, month) {
     return acc + '/' + month.shortName;
 }, '');
 
