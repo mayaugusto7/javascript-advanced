@@ -14,7 +14,7 @@
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.13",
     "localforage": "^1.9.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "ramda": "^0.21.0"
   },
   "scripts": {
